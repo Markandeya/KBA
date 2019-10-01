@@ -1,0 +1,185 @@
+.navbar-gradient {
+  background: linear-gradient(to bottom, #3F74D5,#4975CE);
+}
+.hero-container {
+  height: 80vh;
+  background: linear-gradient(to bottom,#3F74D5,#6121CC);
+  background: -webkit-linear-gradient(to bottom,#3F74D5,#6121CC);
+  background: -moz-linear-gradient(to bottom,#3F74D5,#6121CC);
+  background: -o-linear-gradient(to bottom,#3F74D5,#6121CC);
+
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+  -moz-clip-path: polygon(0 0, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+
+.hero-text {  
+  transform: translateY(-40%);
+  animation: fadeUp 2s ease-in-out 0.5s 1 backwards;
+  cursor: pointer;
+}
+
+.hero-text-sub {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-timing-function:  ease-in-out;
+  animation-delay:  1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+.grow {
+  animation: grow 3s ease-in-out 1s 1 backwards;
+}
+
+.slabo {
+  font-family: 'Slabo 27px', serif;
+}
+.blue {
+  color: #03fcf8;
+}
+.text-gradient {
+  background: linear-gradient(to right, rgb(106, 145, 219) 10%, #fff 50%, #27e4b5 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  --background-size: auto auto;
+  background-size: 200% auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.section-container {
+  height: 80vh;
+  background: linear-gradient(to bottom,#3F74D5,#6121CC);
+  background: -webkit-linear-gradient(to bottom,#3F74D5,#6121CC);
+  background: -moz-linear-gradient(to bottom,#3F74D5,#6121CC);
+  background: -o-linear-gradient(to bottom,#3F74D5,#6121CC);
+
+  clip-path: polygon(0 0, 85% 0%, 100% 25%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 85% 0%, 100% 25%, 100% 100%, 0% 100%);
+  -moz-clip-path: polygon(0 0, 85% 0%, 100% 25%, 100% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.event-container {
+  min-height: 50vh;
+
+  --animation: colorAnim 20s ease-in-out infinite backwards;
+  background: linear-gradient(to top, rgb(125, 14, 133), rgb(207, 38, 219));
+  clip-path: polygon(0 0, 85% 0%, 100% 25%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 85% 0%, 100% 25%, 100% 100%, 0% 100%);
+  -moz-clip-path: polygon(0 0, 85% 0%, 100% 25%, 100% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.advisor-container{
+  min-height: 80vh;
+}
+.is-vcentered {
+  justify-content: center;
+  align-items: center;
+}
+.justify-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-bg {
+  background-image: url('./img/constellation.svg'); /* background by SVGBackgrounds.com */
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes grow{
+  0% {
+    opacity: 0;
+    transform: scale(.1,.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+}
+
+@keyframes glow{
+  0% {
+    text-shadow: 0px 0px 0px;
+  }
+
+  50% {
+    text-shadow: 1px 1px 20px;
+  }
+
+  100% {
+    text-shadow: 0px 0px 0px;
+  }
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes colorAnim{
+  0% {
+    background-color: #2e23c4;
+  }
+
+  33% {
+    background-color: #d149d8;
+  }
+
+  66% {
+    background-color: #6121CC;
+  }
+
+  100% {
+    background-color: #2e23c4;
+  }
+}

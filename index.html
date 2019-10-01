@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <title>Document</title>
+</head>
+<body>
+    <nav class="navbar is-link is-spaced	" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item has-text-weight-bold" href="#">
+            KBA-CET <i class="fas fa-cubes blue" ></i>
+          </a>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end ">
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              About
+            </a>
+
+            <a class="navbar-item">
+              Events
+            </a>
+
+            <a class="navbar-item">
+              Team
+            </a>
+
+            <a class="navbar-item">
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+    
+      <header class="hero-container">
+        <section class="hero is-medium">
+            <div class="hero-body">
+              <div class="container is-fluid has-text-centered">
+                <h1 class="hero-text title has-text-white is-size-1">
+                  Blockchain Innovation Club
+                  
+                </h1>
+                <h2 class="hero-text-sub subtitle has-text-white is-size-4">
+                  College of Engineering Trivandrum
+                </h2>
+
+                <a class="button is-primary is-large is-rounded is-outlined">Upcoming events</a>
+              </div>
+            </div>
+          </section>
+      </header>
+
+      <section class="hero is-transparent is-medium">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              
+              <div class="column is-two-quarter ">
+                <div class="flex-container">
+                  <figure class="image is-128x128" style="margin: 1rem">
+                      <img src="./img/blockchain.svg">
+                  </figure>
+                  <figure class="image is-128x128" style="margin: 1rem">
+                      <img src="./img/blockchain.svg">
+                  </figure>
+                  <figure class="image is-128x128" style="margin: 1rem">
+                      <img src="./img/blockchain.svg">
+                  </figure>
+                </div>  
+              </div>
+              <div class="column  is-two-quarter">
+                <h1 class="title has-text-left has-text-dark is-size-2">
+                    About us<span class="has-text-primary">.</span>
+                </h1>
+                <p class="is-size-5 has-text-justified ">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde odio deserunt animi ratione pariatur blanditiis exercitationem minima quia esse omnis, consequuntur laboriosam nostrum dolor totam vero beatae voluptatem cum dignissimos.
+                </p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+
+      <div class="modal" id="modal1">
+        <div class="modal-background"></div>
+          <div class="modal-card">
+            <h3 >Test</h3>
+          </div>
+        <button class="modal-close is-large" onclick="toggleModal()" aria-label="close"></button>
+      </div>
+
+      <section class="event-container">
+          
+          <section class="hero is-medium">
+              <div class="hero-body justify-center">
+                  <h1 class="is-size-1 has-text-centered text-gradient">Loading events..</h1>
+                  <h2 class="hero-text-sub has-text-centered subtitle has-text-white is-size-4">
+                      Watch this space for future events.
+                  </h2>
+                      
+                <button class="button is-primary is-outlined has-text-centered" onclick="toggleModal()" disabled>
+                  <span>No upcoming events</span>
+                  <span class="icon is-small">
+                      <i class="fas fa-times"></i>
+                  </span>
+                </button>
+              </div>
+            </section>
+      </section>
+
+      <section class="advisor-container">
+          <section class="hero is-medium">
+              <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-size-2 has-text-centered">
+                        Advisory and Team<span class="has-text-primary">.</span> 
+                    </h1>
+                    <div class="tile is-ancestor">
+                        <div class="tile is-vertical is-8">
+                          <div class="tile">
+                            <div class="tile is-parent is-vertical">
+                              <article class="tile is-child notification is-primary">
+                                <p class="title">Vertical...</p>
+                                <p class="subtitle">Top tile</p>
+                              </article>
+                              <article class="tile is-child notification is-warning">
+                                <p class="title">...tiles</p>
+                                <p class="subtitle">Bottom tile</p>
+                                <figure class="image is-2by1">
+                                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                                  </figure>
+                              </article>
+                            </div>
+                            <div class="tile is-parent">
+                              <article class="tile is-child notification is-info">
+                                <p class="title">Middle tile</p>
+                                <p class="subtitle">With an image</p>
+                                <figure class="image is-4by3">
+                                  <img src="https://bulma.io/images/placeholders/640x480.png">
+                                </figure>
+                              </article>
+                            </div>
+                          </div>
+                          <div class="tile is-parent">
+                            <article class="tile is-child notification is-danger">
+                              <p class="title">Wide tile</p>
+                              <p class="subtitle">Aligned with the right tile</p>
+                              <div class="content">
+                                <!-- Content -->
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                        <div class="tile is-parent">
+                          <article class="tile is-child notification is-success">
+                            <div class="content">
+                              <p class="title">Tall tile</p>
+                              <p class="subtitle">With even more content</p>
+                              <div class="content">
+                                  <figure class="image is-4by5">
+                                      <img src="https://bulma.io/images/placeholders/640x480.png">
+                                    </figure>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                </div>
+                  
+              </div>
+          </section>
+        
+      </section>
+
+      <footer class="footer  footer-bg has-text-white">
+        <div class="content">
+          <div class="tile is-ancestor">
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-child"></div>
+              <div class="tile is-child has-text-centered">
+                  <p>
+                      Made with <i class="far fa-heart"></i> by <a href="https://github.com/Markandeya">Vasudev Nair</a>. 
+                  </p>
+                  <p>
+                    &copy 2019 College of Engineering Trivandrum. All rights reserved.
+                  </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+  });
+
+  function toggleModal() {
+    var element = document.getElementById('modal1');
+    element.classList.toggle('is-active');
+    console.log('test');
+  }
+
+  </script>
+</body>
+</html>
