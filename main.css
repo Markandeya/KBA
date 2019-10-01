@@ -97,6 +97,8 @@
 
 .advisor-container{
   min-height: 80vh;
+  background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236c30cc' fill-opacity='0.47' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 .is-vcentered {
   justify-content: center;
@@ -108,7 +110,11 @@
   flex-direction: column;
 }
 
+
 .footer-bg {
+  clip-path: polygon( 0 10%, 10% 0, 90% 0, 100% 10%, 100% 100%, 0% 100%);
+  -moz-clip-path: polygon( 0 10%, 10% 0, 90% 0, 100% 10%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon( 0 10%, 10% 0, 90% 0, 100% 10%, 100% 100%, 0% 100%);
   background-image: url('./img/constellation.svg'); /* background by SVGBackgrounds.com */
 }
 
