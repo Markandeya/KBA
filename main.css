@@ -1,3 +1,13 @@
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(to top, #fff, rgb(240, 232, 232));
+  background-attachment: fixed;
+}
+
+
 .navbar-gradient {
   background: linear-gradient(to bottom, #3F74D5,#4975CE);
 }
@@ -100,6 +110,25 @@
   background-color: #ffffff;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236c30cc' fill-opacity='0.47' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
+
+.contact-container {
+  min-height: 20vh;
+  --background: linear-gradient(rgba(255, 255, 255, 0.95  ), rgba(255, 255, 255, 0.95)), url('./img/blocks.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-bg {
+  background: url('./img/quantum-gradient.svg');
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+ 
+}
+
 .is-vcentered {
   justify-content: center;
   align-items: center;
@@ -112,9 +141,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 .footer-bg {
-  clip-path: polygon( 0 10%, 10% 0, 90% 0, 100% 10%, 100% 100%, 0% 100%);
-  -moz-clip-path: polygon( 0 10%, 10% 0, 90% 0, 100% 10%, 100% 100%, 0% 100%);
-  -webkit-clip-path: polygon( 0 10%, 10% 0, 90% 0, 100% 10%, 100% 100%, 0% 100%);
+  
   background-image: url('./img/constellation.svg'); /* background by SVGBackgrounds.com */
 }
 
