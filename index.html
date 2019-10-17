@@ -8,7 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <title>Document</title>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <title>KBA-CET</title>
 </head>
 <body>
     <nav class="navbar is-link is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
@@ -49,7 +51,8 @@
         </div>
       </nav>
     
-      <header class="hero-container" id="home">
+      <header id="particles-js" class="hero-container" id="home">
+        <img class="main-image" src="./img/college1.jpg" />
         <section class="hero is-medium">
             <div class="hero-body">
               <div class="container is-fluid has-text-centered">
@@ -72,26 +75,27 @@
           <div class="container">
             <div class="columns">
               
-              <div class="column is-two-quarter ">
+              <div class="column is-one-quarter ">
                 <div class="flex-container">
-                  <figure class="image is-128x128" style="margin: 1rem">
-                      <img src="./img/blockchain.svg">
-                  </figure>
-                  <figure class="image is-128x128" style="margin: 1rem">
-                      <img src="./img/blockchain.svg">
-                  </figure>
                   <figure class="image is-128x128" style="margin: 1rem">
                       <img src="./img/blockchain.svg">
                   </figure>
                 </div>  
               </div>
-              <div class="column  is-two-quarter">
+              <div class="column  is-three-quarter">
                 <h1 class="title has-text-left has-text-dark is-size-2">
                     About us<span class="has-text-primary">.</span>
                 </h1>
                 
-                <p class="is-size-5 has-text-justified ">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde odio deserunt animi ratione pariatur blanditiis exercitationem minima quia esse omnis, consequuntur laboriosam nostrum dolor totam vero beatae voluptatem cum dignissimos.
+                <p class="is-size-5 has-text-left ">
+                  Kerala Blockchain Academy Innovation Club (KBAIC) is a novel initiative by Kerala Blockchain Academy (KBA) to help students from 
+                  academic institutions across the country to explore deep into the potential of the blockchain technology.
+                  KBA-CET aims to tap into this disruptive technology and make the students equipped and industry-ready for blockchain applications.
+                  Dr. K Sunil Kumar, Asst Professor Department of Mechanical Engg is the coordinator for the KBAIC.
+                </p>
+                <p class="is-size-5 has-text-left "> 
+                    
+                  
                 </p>
               </div>
             </div>
@@ -125,14 +129,216 @@
             </section>
       </section>
 
+      <section class="hero is-transparent is-medium" id="about">
+          <div class="hero-body">
+            <div class="container">
+              <div class="columns">
+                
+                <!-- <div class="column is-two-quarter ">
+                  <div class="flex-container">
+                    <figure class="image is-128x128" style="margin: 1rem">
+                        <img src="./img/blockchain.svg">
+                    </figure>
+                    <figure class="image is-128x128" style="margin: 1rem">
+                        <img src="./img/blockchain.svg">
+                    </figure>
+                    <figure class="image is-128x128" style="margin: 1rem">
+                        <img src="./img/blockchain.svg">
+                    </figure>
+                  </div>  
+                </div> -->
+                <div class="column text-center center is-two-quarter">
+                    <h1 class="title is-size-2 has-text-centered  has-text-dark is-size-2">
+                      Certificate of Membership<span class="has-text-primary">.</span>
+                  </h1>
+              
+                  <center><img src="./img/certificate.png" class="certificate_image"/>
+                  </center>
+                  <p class="is-size-5 has-text-centered ">
+                     College of Engineering Trivandrum is an official member of KBA Innovation Club.
+                  </p>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </section>
+  
+
       <section class="advisor-container" id="team">
           <section class="hero is-medium">
               <div class="hero-body">
+                
                 <div class="container">
                     <h1 class="title is-size-2 has-text-centered">
                         Advisory and Team<span class="has-text-primary">.</span> 
                     </h1>
-                    <div class="tile is-ancestor">
+                    
+                    <h2 class="title is-size-4 has-text-centered  sub-head" style="margin-top:4em">
+                        KBAIC Coordinator
+                    </h2>
+<div clas="notification is-info">
+    <div class="columns is-multiline">
+        <!-- <div class="column is-one-quarter-desktop is-half-tablet"> -->
+            <div class="justify-center is-vcentered"  style="width: 100%; margin: 2em;">
+                <div class="">
+                    <figure class="image is-128x128">
+                        <img src="./img/ksk.jpg" class="is-rounded" alt="">
+                    </figure>
+                </div>
+                <footer class="">
+                    <p class="has-text-centered">
+                      Dr. K Sunil Kumar
+                    </p>
+                    <p class="tag is-info">
+                        Mechanical Engg - Associate Professor
+                    </p>  
+                </footer>
+            </div>
+          <!-- </div>  -->
+      </div>
+
+    </div>
+
+    <h2 class="title is-size-4 has-text-centered sub-head">
+        KBAIC Department Coordinator
+    </h2>
+    <div clas="notification is-info">
+        <div class="columns is-multiline">
+                <div class="justify-center is-vcentered"  style="width: 100%; margin: 2em;">
+                    <div class="">
+                        <figure class="image is-128x128">
+                            <img src="./img/default_user.jpg" class="is-rounded" alt="">
+                        </figure>
+                    </div>
+                    <footer class="">
+                        <p class="has-text-centered">
+                          Baby Syla S
+                        </p>
+                        <p class="tag is-info">
+                            MCA - Assistant Professor
+                        </p>  
+                    </footer>
+                </div>
+          </div>
+    
+        </div>
+
+
+    
+        <h2 class="title is-size-4 has-text-centered  sub-head">
+            KBAIC Student Ambassadors
+        </h2>
+<div clas="notification is-info">
+    <div class="columns is-multiline">
+          <div class="column is-offset-one-quarter  is-one-quarter-desktop is-half-tablet">
+            <div class="justify-center is-vcentered">
+                <div class="">
+                    <figure class="image is-128x128">
+                        <img src="./img/default_user.jpg" class="is-rounded" alt="">
+                    </figure>
+                </div>
+                <footer class="is-text-centered">
+                    <a class="card-footer-item">
+                      Ashwin Madhu
+                    </a>
+                </footer>
+            </div>
+          </div> 
+          <div class="column is-one-quarter-desktop is-half-tablet">
+            <div class="justify-center is-vcentered">
+                <div class="">
+                    <figure class="image is-128x128">
+                        <img src="./img/default_user.jpg" class="is-rounded" alt="">
+                    </figure>
+                </div>
+                <footer class="is-text-centered">
+                    <a class="card-footer-item">
+                      Vasudev R Nair
+                    </a>
+                </footer>
+            </div>
+          </div> 
+        
+      </div>
+
+    </div>
+
+
+
+    <h2 class="title is-size-4 has-text-centered sub-head">
+        Executive Committee
+    </h2>
+<div clas="notification is-info">
+                    <div class="columns is-multiline">
+                        <div class="column is-one-quarter-desktop is-half-tablet">
+                          <div class="justify-center is-vcentered">
+                              <div class="">
+                                  <figure class="image is-128x128">
+                                      <img src="./img/default_user.jpg" class="is-rounded" alt="">
+                                  </figure>
+                              </div>
+                              <footer class="is-text-centered">
+                                  <a class="card-footer-item">
+                                    Varna Krishnan
+                                  </a>
+                              </footer>
+                          </div>
+                        </div>  
+                        <div class="column is-one-quarter-desktop is-half-tablet">
+                          <div class="justify-center is-vcentered">
+                              <div class="">
+                                  <figure class="image is-128x128">
+                                      <img src="./img/default_user.jpg" class="is-rounded" alt="">
+                                  </figure>
+                              </div>
+                              <footer class="is-text-centered">
+                                  <a class="card-footer-item">
+                                    Shibin Sidharth
+                                  </a>
+                              </footer>
+                          </div>
+                        </div> 
+                        <div class="column is-one-quarter-desktop is-half-tablet">
+                          <div class="justify-center is-vcentered">
+                              <div class="">
+                                  <figure class="image is-128x128">
+                                      <img src="./img/default_user.jpg" class="is-rounded" alt="">
+                                  </figure>
+                              </div>
+                              <footer class="is-text-centered">
+                                  <a class="card-footer-item">
+                                    Anna Shajan
+                                  </a>
+                              </footer>
+                          </div>
+                        </div> 
+                        <div class="column is-one-quarter-desktop is-half-tablet">
+                          <div class="justify-center is-vcentered">
+                              <div class="">
+                                  <figure class="image is-128x128">
+                                      <img src="./img/default_user.jpg" class="is-rounded" alt="">
+                                  </figure>
+                              </div>
+                              <footer class="is-text-centered">
+                                  <a class="card-footer-item">
+                                    Vaishnav P
+                                  </a>
+                              </footer>
+                          </div>
+                        </div> 
+                      
+                      </div>
+
+                    </div>
+
+
+
+
+
+
+                    <!-- <div class="tile is-ancestor">
                         <div class="tile is-vertical is-8">
                           <div class="tile">
                             <div class="tile is-parent is-vertical">
@@ -163,7 +369,7 @@
                               <p class="title">Wide tile</p>
                               <p class="subtitle">Aligned with the right tile</p>
                               <div class="content">
-                                <!-- Content -->
+                               
                               </div>
                             </article>
                           </div>
@@ -181,7 +387,7 @@
                             </div>
                           </article>
                         </div>
-                      </div>
+                      </div> -->
                 </div>
               </div>
           </section>
@@ -207,10 +413,8 @@
           <div class="tile is-ancestor">
             <div class="tile is-parent is-vertical">
               <div class="tile is-child"></div>
-              <div class="tile is-child has-text-centered">
-                  <p>
-                      Made with <i class="far fa-heart"></i> by <a>Vasudev Nair</a>. 
-                  </p>
+              <div class="tile is-child has-text-centered" style="animation: fadeUp 2s ease-in-out 0.5s 1 backwards;">
+                  
                   <p>
                     &copy 2019 College of Engineering Trivandrum. All rights reserved.
                   </p>
@@ -282,5 +486,7 @@
   }
 
   </script>
+  <script src="./js/particle_custom.js" ></script>
 </body>
+
 </html>

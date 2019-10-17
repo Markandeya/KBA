@@ -1,3 +1,6 @@
+*{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 html {
   scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
@@ -8,15 +11,39 @@ body {
 }
 
 
+
 .navbar-gradient {
   background: linear-gradient(to bottom, #3F74D5,#4975CE);
 }
+.particles-js-canvas-el{
+  position: absolute;
+  z-index:-2;
+}
+.hero-content{
+  z-index: 2;
+}
+.main-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.certificate_image{
+  max-width: 50%;;
+}
+.sub-head{
+  margin-top: 0.7em;
+}
 .hero-container {
   height: 80vh;
-  background: linear-gradient(to bottom,#3F74D5,#6121CC);
-  background: -webkit-linear-gradient(to bottom,#3F74D5,#6121CC);
-  background: -moz-linear-gradient(to bottom,#3F74D5,#6121CC);
-  background: -o-linear-gradient(to bottom,#3F74D5,#6121CC);
+  background: linear-gradient(to bottom,#3F74D5,#000000);
+  background: -webkit-linear-gradient(to bottom,#3F74D5,#000000);
+  background: -moz-linear-gradient(to bottom,#3F74D5,#000000);
+  background: -o-linear-gradient(to bottom,#3F74D5,#000000);
+  /* background-image: url('img/college1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center; */
+ 
 
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
