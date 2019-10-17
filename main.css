@@ -11,11 +11,16 @@ body {
 }
 
 
+
 .navbar-gradient {
   background: linear-gradient(to bottom, #3F74D5,#4975CE);
 }
 .particles-js-canvas-el{
   position: absolute;
+  z-index:-2;
+}
+.hero-content{
+  z-index: 2;
 }
 .main-image{
   position: absolute;
